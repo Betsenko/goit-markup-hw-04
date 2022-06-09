@@ -385,7 +385,7 @@ body {
 
 .profession {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
     text-align: center;
 }
 /* =========================================== */
@@ -393,7 +393,7 @@ body {
 
 .social-network {
      display: flex;
-     margin-top: 16px;
+     margin-top: px;
      padding: 0;
      justify-content:center;
 }
@@ -633,7 +633,7 @@ body {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -656,6 +656,9 @@ body {
 }
 .join-soc-link:hover {
     background-color:var(--accent-color)
+}
+.join-soc-link:focus {
+    background-color:var(--accent-color) 
 }
 
 
@@ -692,7 +695,6 @@ body {
     background: #F5F4FA;
     padding: 6px 22px;
     margin-top: 0px;
-    /* margin-bottom: 50px; */
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -724,7 +726,6 @@ body {
 .btn-current {
     padding: 6px 22px;
     margin-top: 0px;
-    margin-bottom: 50px;
     background:#F5F4FA;
     /* color: var(--primary-white-color); */
     font-family: inherit;
@@ -741,11 +742,11 @@ body {
 .btn-select {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .select {
     margin-right: 8px;
-    margin-bottom: 50px;
 }
 
 .btn-select .select:last-child {
@@ -815,8 +816,13 @@ body {
     margin-right: 30px;
     vertical-align: middle;
 }
+.box-link {
+    display: flex;
+    flex-direction: column;
+}
 
-.box-link:hover {
+.box-link:hover,
+.box-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
